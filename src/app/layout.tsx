@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
 
-const cooperBTLight = localFont({
+export const cooperBTLight = localFont({
   src: '../font/CooperBTLight.woff2',
 });
 
-const maisonNeue = localFont({
+export const maisonNeue = localFont({
   src: '../font/MaisonNeueWEB-Mono.woff2',
 });
 
@@ -23,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cooperBTLight.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${maisonNeue.className} antialiased`}>{children}</body>
     </html>
   );
 }
