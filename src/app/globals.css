@@ -31,6 +31,10 @@
     line-height: 1.25;
   }
 
+  svg {
+    height: 24;
+    width: 24;
+  }
   hr {
     border-top-width: 0px;
   }
