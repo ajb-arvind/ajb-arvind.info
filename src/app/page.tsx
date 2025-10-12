@@ -1,8 +1,7 @@
+import { Contact } from '@/components/contact/Contact';
+import { Footer } from '@/components/footer/Footer';
 import { MainHeader } from '@/components/Header/main-header';
 import { Hero } from '@/components/hero/Hero';
-import { Separator } from '@/components/ui/Separator';
-import { SectionTitle } from '@/components/section/SectionTitle';
-import { SectionCard } from '@/components/section/article';
 import { ProjectSection } from '@/components/section/ProjectSection';
 
 export default function Home() {
@@ -11,6 +10,8 @@ export default function Home() {
       <MainHeader />
       <Hero />
       <ProjectSection />
+      <Contact />
+      <Footer />
     </main>
   );
 }

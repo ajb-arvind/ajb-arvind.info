@@ -1,6 +1,7 @@
 export const TITLE = 'Arvind.badwar';
 
 export const EMAIL = 'arvind.bdw@gmail.com';
+export const MAILTO = 'mailto:arvind.bdw@gmail.com';
 
 export const SOCIAL_LINK = {
   github: 'https://github.com/ajb-arvind/',
@@ -37,3 +38,7 @@ export const PROJECT_DATA = [
     alt: 'Screenshot of Showtime Media Player.',
   },
 ];
+
+const RANDOM_ACTIVITY = ['  🎵 listening to Tere Naina'];
+
+export const COPYRIGHT_REMARK = `Copyright © ${new Date().getFullYear()} Arvind Badwar`;

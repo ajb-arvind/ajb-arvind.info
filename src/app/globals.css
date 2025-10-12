@@ -23,6 +23,11 @@
     box-sizing: content-box;
   }
 
+  ::selection {
+    background: black; /* Change this to your desired highlight background color */
+    color: white; /* Change this to your desired highlighted text color */
+  }
+
   body {
     background: var(--background);
     color: var(--foreground);
