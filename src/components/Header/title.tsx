@@ -1,4 +1,5 @@
 import { cooperBTLight } from '@/app/layout';
+import { TITLE } from '@/lib/constant';
 import { cn } from '@/lib/utils';
 
 type Props = React.HTMLAttributes<HTMLHeadingElement>;
@@ -13,7 +14,7 @@ export const Title = ({ className, ...props }: Props) => {
       )}
       {...props}
     >
-      Arvind Badwar
+      {TITLE}
     </h1>
   );
 };

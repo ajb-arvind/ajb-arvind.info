@@ -1,6 +1,7 @@
-import { LinkButton } from '../ui/LinkButton';
 import { Separator } from '../ui/Separator';
 import { Title } from './title';
+import { Social } from './socials';
+import { EMAIL } from '@/lib/constant';
 
 export const MainHeader = () => {
   return (
@@ -20,25 +21,13 @@ export const MainHeader = () => {
           </div>
           <div className="flex flex-col md:flex-row flex-1 items-center md:pl-3">
             <Separator className="my-4" />
-            <div className="flex-1 flex items-center gap-2 md:pl-3">
-              <LinkButton href="https://github.com/arvindbadwar">
-                GitHub
-              </LinkButton>
-              <span>—</span>
-              <LinkButton href="https://linkedin.com/in/arvindbadwar">
-                LinkedIn
-              </LinkButton>
-              <span>—</span>
-              <LinkButton href="https://twitter.com/arvindbadwar">
-                Twitter
-              </LinkButton>
-            </div>
+            <Social className="flex-1 md:pl-3" />
           </div>
         </div>
         <div className="relative">
           <Separator className="h-1!" />
           <div className="absolute top-1/2 left-1/2 -translate-1/2 bg-white border py-2 px-4 cursor-pointer">
-            arvind.bdw@gmail.com
+            {EMAIL}
           </div>
         </div>
       </header>

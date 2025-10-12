@@ -38,4 +38,8 @@
   hr {
     border-top-width: 0px;
   }
+
+  summary {
+    display: block;
+  }
 }

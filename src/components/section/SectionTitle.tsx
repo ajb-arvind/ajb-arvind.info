@@ -1,25 +1,28 @@
 import { cn } from '@/lib/utils';
-import Project from '@/svg/project.svg';
 
-type SectionTitleProps = {
-  title: string;
-  icon?: React.ReactNode;
-  titleProps?: React.HTMLAttributes<HTMLHeadingElement>;
-} & React.HTMLAttributes<HTMLDivElement>;
-
-export const SectionTitle = ({
-  title,
-  icon = <Project />,
-  titleProps,
+const SectionTitleRoot = ({
   className,
   ...props
-}: SectionTitleProps) => {
+}: React.ComponentProps<'div'>) => {
   return (
-    <div className={cn('flex items-center', className)} {...props}>
-      {icon}
-      <h2 className={cn('ml-2 pt-0.5', titleProps?.className)} {...titleProps}>
-        {title}
-      </h2>
-    </div>
+    <div
+      className={cn(
+        'inline-flex items-center [&_svg]:shrink-0 has-[>svg]:px-2.5 group',
+        className
+      )}
+      {...props}
+    />
   );
 };
+
+const SectionTitle = ({ className, ...props }: React.ComponentProps<'h2'>) => {
+  return (
+    <h2
+      data-slot="section-title"
+      className={cn('ml-2 group-has-[>svg]:pt-0.5', className)}
+      {...props}
+    />
+  );
+};
+
+export { SectionTitle, SectionTitleRoot };
