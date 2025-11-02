@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer/Footer';
 import { MainHeader } from '@/app/_components/main-header';
 import { ProjectSection } from '@/components/section/ProjectSection';
 import { Hero } from './_components/hero';
+import { AboutMe } from './_components/about-me';
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       <MainHeader />
       <Wrapper>
         <Hero />
-        <ProjectSection />
+        <AboutMe />
       </Wrapper>
 
       {/* <MainHeader /> */}
