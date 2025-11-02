@@ -39,9 +39,7 @@ export default function Home() {
       <MainHeader />
       <Wrapper>
         <Hero />
-        <div className="min-h-[calc(100lvh-80px)] lg:min-h-[calc(100lvh-120px)] bg-red-200">
-          hello
-        </div>
+        <ProjectSection />
       </Wrapper>
 
       {/* <MainHeader /> */}

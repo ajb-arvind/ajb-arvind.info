@@ -14,11 +14,7 @@ import Project from '@/svg/project.svg';
 
 export const ProjectSection = () => {
   return (
-    <section className="px-4">
-      <div className="space-y-1.5 my-4">
-        <Separator />
-        <Separator />
-      </div>
+    <section>
       <SectionTitleRoot className="mb-4">
         <Project />
         <SectionTitle>Project</SectionTitle>
