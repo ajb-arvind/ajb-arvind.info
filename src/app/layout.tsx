@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
+import { Preloader } from './_components/Preloader';
 
 export const cooperBTLight = localFont({
   src: '../font/CooperBTLight.woff2',
@@ -23,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${maisonNeue.className} antialiased`}>{children}</body>
+      <body className={`${maisonNeue.className} antialiased`}>
+        {children}
+        <Preloader />
+      </body>
     </html>
   );
 }

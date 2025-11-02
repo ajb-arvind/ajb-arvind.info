@@ -9,6 +9,25 @@ export const SOCIAL_LINK = {
   twitter: 'https://x.com/ajb_arvind',
 };
 
+export const GREETINGS = [
+  { text: 'Hello', language: 'English' },
+  { text: 'नमस्ते', language: 'Hindi (Namaste)' },
+  { text: 'नमस्कार', language: 'Marathi (Namskar)' },
+  { text: 'Hola', language: 'Spanish' },
+  { text: 'Bonjour', language: 'French' },
+  { text: 'Hallo', language: 'German' },
+  { text: 'Olá', language: 'Portuguese' },
+  { text: 'Ciao', language: 'Italian' },
+  // { text: 'Hej', language: 'Swedish' },
+  // { text: 'Merhaba', language: 'Turkish' },
+  // { text: 'Jambo', language: 'Swahili' },
+  // { text: 'Sawubona', language: 'Zulu' },
+  // { text: 'Γεια σου', language: 'Greek (Yassou)' },
+  // { text: 'Shalom', language: 'Hebrew' },
+  // { text: 'สวัสดี', language: 'Thai (Sawasdee)' },
+  // { text: 'Xin chào', language: 'Vietnamese' },
+];
+
 export const PROJECT_DATA = [
   {
     id: 0,

@@ -1,16 +1,46 @@
 @import 'tailwindcss';
 
 @theme inline {
+  --color-shark-50: #f6f6f6;
+  --color-shark-100: #e7e7e7;
+  --color-shark-200: #d1d1d1;
+  --color-shark-300: #b0b0b0;
+  --color-shark-400: #888888;
+  --color-shark-500: #6d6d6d;
+  --color-shark-600: #5d5d5d;
+  --color-shark-700: #4f4f4f;
+  --color-shark-800: #454545;
+  --color-shark-900: #3d3d3d;
+  --color-shark-950: #222222;
+
+  @keyframes progress {
+    0% {
+      transform: translateX(0) scaleX(0);
+    }
+
+    40% {
+      transform: translateX(0) scaleX(0.4);
+    }
+
+    100% {
+      transform: translateX(100%) scaleX(0.5);
+    }
+  }
+
+  --animate-progress: progress 1s infinite linear;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-highlight: var(--highlight);
+
+  --breakpoint-lg: 900px;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: black;
+  --background: #f3f3f3;
+  --foreground: #222222;
   --highlight: #ffef8d;
 }
 
@@ -23,9 +53,13 @@
     box-sizing: content-box;
   }
 
-  ::selection {
-    background: black; /* Change this to your desired highlight background color */
-    color: white; /* Change this to your desired highlighted text color */
+  /* ::selection {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  } */
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   body {
