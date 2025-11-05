@@ -35,7 +35,80 @@
   --font-mono: var(--font-geist-mono);
   --color-highlight: var(--highlight);
 
-  --breakpoint-lg: 900px;
+  --text-heading-1: 2.5rem;
+  --text-heading-2: 2rem;
+  --text-heading-3: 1.5rem;
+  --text-heading-4: 1.25rem;
+
+  --color-secondary-100: #6b645c;
+  --color-secondary-200: #524d47;
+  --color-secondary-300: #393632;
+  --color-secondary-400: #080807;
+  --color-secondary-50: #a29e9a;
+  --color-secondary-75: #7e766c;
+  --color-accent-200: #e8e8e3;
+  --color-text-bg: rgb(209, 209, 199);
+  --color-accent-400: #d1d1c7;
+  --color-accent-500: #bfbfb1;
+  --color-accent-600: #8c8c73;
+  --color-error: #9e1f1f;
+  --color-ad1a1a: #ad1a1a;
+
+  --spacing-nav-height: clamp(5rem, 3.125rem + 8.333vw, 7.5rem);
+
+  --text-heading: clamp(80px, 67.755px + 3.401vw, 120px);
+  --text-description: clamp(16px, 13.551px + 0.68vw, 24px);
+  --text-about-me: clamp(30px, 19.592px + 2.891vw, 64px);
+  --text-skills: clamp(20px, 16.939px + 0.85vw, 30px);
+
+  /* --text-base-small: 1rem;
+  --text-base: clamp(1rem, 0.9286rem + 0.3571vi, 1.25rem);
+  --text-base-large: clamp(1rem, 0.8571rem + 0.7143vi, 1.5rem); 
+  --text-base: clamp(20px, 16.939px + 0.85vw, 30px);
+  --text-h6: clamp(1rem, 0.928rem + 0.36vw, 1.25rem);
+  --text-h5: clamp(1.13rem, 1.004rem + 0.63vw, 1.57rem);
+  --text-h4: clamp(1.25rem, 1.0359rem + 1.0707vi, 1.9995rem);
+  --text-h3: clamp(1.5625rem, 1.2474rem + 1.5755vi, 2.6653rem);
+  --text-h2: clamp(1.9531rem, 1.496rem + 2.2854vi, 3.5529rem);
+  --text-h1: clamp(3.5rem, 2.3571rem + 5.5143vi, 10.5rem);
+  --text-display: clamp(4rem, 1.203rem + 10.0714vw, 10.25rem);
+  --text-body: clamp(1rem, 0.6071rem + 1.0143vi, 2.25rem);
+  --text-h1-alt: clamp(3rem, 2.5rem + 3.75vi, 5.625rem);
+  --text-h1-display: clamp(3.2rem, 2.3571rem + 5.5143vi, 6rem);
+  --text-menu: clamp(2.5rem, 1.107rem + 3.5714vi, 4.5rem);
+  --text-heading-1: clamp(3.5rem, 2.3571rem + 5.5143vw, 10.5rem);
+  --text-heading-1--alt: clamp(3rem, 2.25rem + 3.75vi, 5.625rem);
+  --text-heading-2: clamp(1.9531rem, 1.496rem + 2.2854vi, 3.5529rem);
+  --text-heading-3: clamp(1.5625rem, 1.2474rem + 1.5755vi, 2.6653rem);
+  --text-heading-4: clamp(1.25rem, 1.0359rem + 1.0707vi, 1.9995rem);
+  --text-heading-5: clamp(1.13rem, 1.004rem + 0.63vw, 1.57rem);
+  --text-heading-display: clamp(4rem, 1.203rem + 10.0714vw, 10.25rem);
+  --text-heading-body: clamp(1rem, 0.6071rem + 1.0143vi, 2.25rem);
+  --padding-horizontal--main: clamp(1rem, 0.428rem + 2.86vw, 3rem);
+  --padding-v: clamp(0.89rem, 0.862rem + 0.14vw, 0.99rem);
+  --padding-button: clamp(0.89rem, 0.7rem + 0.14vw, 0.88rem);
+  --padding-top--main: clamp(1rem, 1.8571rem + 1.5143vi, 3.5rem);
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vi, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vi, 0.9375rem);
+  --container-xl: clamp(22.5rem, 5.143rem + 77.143vw, 36rem);
+  --space-sm: clamp(1.125rem, 1.0893rem + 0.1786vi, 1.25rem);
+  --space-md: clamp(1.6875rem, 1.6339rem + 0.2679vi, 1.875rem);
+  --space-lg: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vi, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vi, 5rem);
+  --space-3xl: clamp(5.25rem, 5.8571rem + 0.9023vi, 6.25rem);
+  --gap-fluid: clamp(1rem, 0.8571rem + 1.0143vi, 3.5rem);
+  --column-count: 12;
+  --grid-main: repeat(var(--column-count), minmax(0, 1fr));
+  --grid-gap-total: calc(var(--gap-fluid) * (var(--column-count) - 1));
+  --column-width: calc(
+    (100% - var(--grid-gap-total)) / var(--column-count) + var(--gap-fluid)
+  );*/
+  --animate-dot: dot 2.5s linear infinite;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  --breakpoint-lg: 1024px;
 }
 
 :root {

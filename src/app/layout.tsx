@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
 import { Preloader } from './_components/Preloader';
+import { Lenis } from './_components/lensis';
 
 export const cooperBTLight = localFont({
   src: '../font/CooperBTLight.woff2',
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${maisonNeue.className} antialiased`}>
         {children}
+        <Lenis root />
         <Preloader />
       </body>
     </html>

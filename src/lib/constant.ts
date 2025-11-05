@@ -31,7 +31,7 @@ export const GREETINGS = [
 export const PROJECT_DATA = [
   {
     id: 0,
-    title: 'Comfy React Store 🛍️',
+    title: 'Comfy React Store',
     description:
       'A tiny React storefront with buttery product browsing, instant cart updates and pixel-perfect responsiveness — shop the UI, not the friction.',
     link: 'https://with-react-comfy-store.netlify.app/',
@@ -40,7 +40,7 @@ export const PROJECT_DATA = [
   },
   {
     id: 1,
-    title: 'Travel with Backroads ✈️',
+    title: 'Travel with Backroads',
     description:
       'An itinerary-style travel site with immersive hero, route cards and a smooth responsive grid — mini trip planner vibes.',
     link: 'https://travel-with-backroads.netlify.app/',
@@ -49,7 +49,7 @@ export const PROJECT_DATA = [
   },
   {
     id: 2,
-    title: 'Showtime Media Player 🎬',
+    title: 'Showtime Media Player',
     description:
       'A sleek media player with precise scrubbing, keyboard shortcuts and buttery animations — press play on good engineering.',
     link: 'https://showtime-player.netlify.app',
