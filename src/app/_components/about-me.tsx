@@ -15,7 +15,7 @@ const skills = [
 
 export const AboutMe = () => {
   return (
-    <Section className="px-4 lg:px-20 bg-background space-y-32 mt-nav-height">
+    <Section className="space-y-32 mt-nav-height">
       <div className="space-y-8">
         <p className={cn(cooperBTLight.className, 'text-xl text-shark-500')}>
           What I do

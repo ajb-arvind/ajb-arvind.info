@@ -52,7 +52,7 @@ export const ProjectPart = ({
 
 export const Project = () => {
   return (
-    <Section className="space-y-8 px-4 lg:px-20 mt-nav-height">
+    <Section className="space-y-8 mt-nav-height">
       <p className={cn(cooperBTLight.className, 'text-xl text-shark-500')}>
         I Build stuff
       </p>

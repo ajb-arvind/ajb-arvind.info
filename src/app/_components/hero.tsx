@@ -5,9 +5,9 @@ import React from 'react';
 
 export function Hero() {
   return (
-    <section className="h-screen px-4 lg:px-20">
+    <section className="h-screen">
       <div
-        className={`mt-nav-height bg-[url(/hero-bg.svg)] bg-no-repeat bg-cover relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-200 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-200 after:-left-[100vw]`}
+        className={`mt-nav-height relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-200 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-200 after:-left-[100vw]`}
       >
         <div className="lg:mb-4">
           <p className="tracking-tighter bg-amber-100 shadow w-fit py-1 px-2">
