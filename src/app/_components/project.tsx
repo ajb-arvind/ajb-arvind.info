@@ -21,23 +21,16 @@ export const ProjectPart = ({
 }) => {
   return (
     <div className={cn('border', cooperBTLight.className)}>
-      <div className="flex grid-cols-12 items-center justify-start gap-x-[var(--space-xs)] text-left text-[length:var(--text-heading-2)] font-semibold text-[var(--color-accent-400)] md:grid md:justify-between md:gap-x-[var(--gap-fluid)]">
-        <span
-          className="col-span-2"
-          style={{
-            fontSize: 'clamp(1.9531rem,1.496rem + 2.2854vi,3.5529rem)',
-          }}
-        >
-          (0{index + 1})
-        </span>
-        <h3 className="col-span-8 col-start-6 py-8 2xl:py-[var(--space-sm)] text-h2">
+      <div className="flex grid-cols-12 items-center justify-start text-about-me gap-x-4 text-left font-semibold md:grid md:justify-between md:gap-x-4">
+        <span className="col-span-2">(0{index + 1})</span>
+        <h3 className="col-span-8 col-start-6 py-8 2xl:py-10 text-h2">
           {project.title}
         </h3>
       </div>
       <div className="grid-gap relative flex min-h-[30vh] flex-col place-items-start pt-[var(--space-3xs)] md:grid md:min-h-[40vh] md:grid-cols-12">
         <div className="col-span-7 col-start-6 flex w-full flex-col gap-y-[var(--space-sm)] pt-[var(--space-sm)] text-[length:var(--text-heading-4)]">
           <p
-            className="max-w-[40ch] text-balance font-medium text-shark-700"
+            className="max-w-[40ch] text-balance font-medium text-shark-800"
             style={{
               fontSize: 'clamp(1.25rem,1.0359rem + 1.0707vi,1.9995rem)',
             }}

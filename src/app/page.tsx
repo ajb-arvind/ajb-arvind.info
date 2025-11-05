@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <main>
       <div className="fixed inset-x-0 top-0 h-full w-full bg-background">
-        <div className="absolute top-0 bottom-0 left-4 right-4 lg:left-20 lg:right-20 border-r border-r-shark-100 bg-[linear-gradient(to_right,var(--color-shark-100)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-shark-100)_1px,transparent_1px)] bg-[size:80px_var(--spacing-nav-height)]"></div>
+        <div className="absolute top-0 bottom-0 left-4 right-4 lg:left-20 lg:right-20 border-r border-r-shark-100 bg-[linear-gradient(to_right,var(--color-shark-100)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-shark-100)_1px,transparent_1px)] bg-[size:150px_var(--spacing-nav-height)]"></div>
         {/* <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(125%_125%_at_50%_10%,var(--color-shark-200)_40%,rgba(15,23,42,1)_100%)]"></div> */}
       </div>
       <Wrapper>
