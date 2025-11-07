@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { cooperBTLight } from '../layout';
 import { Button } from '@/components/ui/button';
-import { EMAIL, MAILTO } from '@/lib/constant';
+import { EMAIL, MAILTO, SOCIAL_LINK } from '@/lib/constant';
 import Linkedin from '@/svg/linkedin.svg';
 import Github from '@/svg/github.svg';
 import Instagram from '@/svg/instagram.svg';
@@ -41,10 +41,18 @@ export const Contact = () => {
               Social Links
             </p>
             <div className="flex flex-row gap-6 ">
-              <Linkedin className="size-7" />
-              <Github className="size-7" />
-              <X className="size-7" />
-              <Instagram className="size-7" />
+              <a href={SOCIAL_LINK.github}>
+                <Linkedin className="size-7" />
+              </a>
+              <a href={SOCIAL_LINK.github}>
+                <Github className="size-7" />
+              </a>
+              <a href={SOCIAL_LINK.twitter}>
+                <X className="size-7" />
+              </a>
+              <a href={SOCIAL_LINK.instagram}>
+                <Instagram className="size-7" />
+              </a>
             </div>
           </div>
         </div>
