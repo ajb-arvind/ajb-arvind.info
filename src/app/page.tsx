@@ -45,18 +45,8 @@ export default function Home() {
           <AboutMe />
           <Project />
           <Contact />
-          {/* <Footer /> */}
         </article>
       </Wrapper>
-      {/* <AboutMe />
-       
-    */}
-      {/* <MainHeader /> */}
-      {/* 
-      <Hero />
-      <ProjectSection />
-      <Contact />
-      <Footer /> */}{' '}
     </main>
   );
 }

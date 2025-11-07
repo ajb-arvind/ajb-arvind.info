@@ -4,9 +4,18 @@ export const EMAIL = 'arvind.bdw@gmail.com';
 export const MAILTO = 'mailto:arvind.bdw@gmail.com';
 
 export const SOCIAL_LINK = {
-  github: 'https://github.com/ajb-arvind/',
-  linkedin: 'https://www.linkedin.com/in/ajb-arvind/',
-  twitter: 'https://x.com/ajb_arvind',
+  github: {
+    link: 'https://github.com/ajb-arvind/',
+    icon: 'github',
+  },
+  linkedin: {
+    link: 'https://www.linkedin.com/in/ajb-arvind/',
+    icon: 'linkedin',
+  },
+  twitter: {
+    link: 'https://x.com/ajb_arvind',
+    icon: 'twitter',
+  },
 };
 
 export const GREETINGS = [

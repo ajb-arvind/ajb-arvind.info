@@ -1,8 +1,11 @@
 import { cn } from '@/lib/utils';
 import { cooperBTLight } from '../layout';
 import { Button } from '@/components/ui/button';
-import { Section } from './section';
 import { EMAIL, MAILTO } from '@/lib/constant';
+import Linkedin from '@/svg/linkedin.svg';
+import Github from '@/svg/github.svg';
+import Instagram from '@/svg/instagram.svg';
+import X from '@/svg/x.svg';
 
 export const Contact = () => {
   return (
@@ -17,16 +20,35 @@ export const Contact = () => {
           Let's collaborate!
         </h1>
       </div>
-      <div className="grid grid-cols-12 gap-12 divide-x divide-gray-300">
-        <div className="col-span-12 lg:col-span-6 px-4 md:px-16 order-2 lg:order-1">
-          <p className={cn(cooperBTLight.className, 'text-xl text-shark-500')}>
-            Email
-          </p>
-          <p className={cn(cooperBTLight.className, 'text-skills text-start')}>
-            {EMAIL}
-          </p>
+      <div className="grid lg:grid-cols-2 gap-12 divide-x divide-gray-300">
+        <div className="px-4 md:px-16 order-2 lg:order-1">
+          <div className="mb-20">
+            <p
+              className={cn(cooperBTLight.className, 'text-xl text-shark-500')}
+            >
+              Email
+            </p>
+            <p
+              className={cn(cooperBTLight.className, 'text-skills text-start')}
+            >
+              {EMAIL}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <p
+              className={cn(cooperBTLight.className, 'text-xl text-shark-500')}
+            >
+              Social Links
+            </p>
+            <div className="flex flex-row gap-6 ">
+              <Linkedin className="size-7" />
+              <Github className="size-7" />
+              <X className="size-7" />
+              <Instagram className="size-7" />
+            </div>
+          </div>
         </div>
-        <form className="space-y-6 col-span-12 lg:col-span-6 order-1 lg:order-2 px-4 md:px-16">
+        <form className="space-y-6 px-4 md:px-16 order-1 lg:order-2">
           <input
             id="name"
             name="name"
