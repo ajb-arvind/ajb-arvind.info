@@ -9,7 +9,7 @@ import X from '@/svg/x.svg';
 
 export const Contact = () => {
   return (
-    <section className="py-10 pb-10 bg-shark-50 border border-gray-400 mt-nav-height">
+    <section className="py-10 pb-10  border border-gray-400 mt-nav-height bg-background">
       <div>
         <h1
           className={cn(

@@ -3,6 +3,7 @@ import { Hero } from './_components/hero';
 import { AboutMe } from './_components/about-me';
 import { Project } from './_components/project';
 import { Contact } from './_components/contact';
+import Skills from './_components/skills';
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -34,19 +35,22 @@ const Wrapper = ({ children }: { children: React.ReactNode }) => {
 export default function Home() {
   return (
     <main>
-      <div className="fixed inset-x-0 top-0 h-full w-full bg-background">
+      {/* <div className="fixed inset-x-0 top-0 h-full w-full bg-background">
         <div className="absolute top-0 bottom-0 left-4 right-4 md:left-20 md:right-20 border-r border-r-shark-100 bg-[linear-gradient(to_right,var(--color-shark-100)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-shark-100)_1px,transparent_1px)] bg-[size:150px_var(--spacing-nav-height)]"></div>
-        {/* <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(125%_125%_at_50%_10%,var(--color-shark-200)_40%,rgba(15,23,42,1)_100%)]"></div> */}
-      </div>
-      <Wrapper>
-        <MainHeader />
-        <article>
-          <Hero />
+      </div> */}
+      {/* <Wrapper> */}
+      <MainHeader />
+      <article>
+        <Hero />
+        <div className="relative min-h-screen w-full">
           <AboutMe />
-          <Project />
-          <Contact />
-        </article>
-      </Wrapper>
+        </div>
+        {/* <AboutMe /> */}
+        {/* <AboutMe />
+        <Project />
+        <Contact /> */}
+      </article>
+      {/* </Wrapper> */}
     </main>
   );
 }

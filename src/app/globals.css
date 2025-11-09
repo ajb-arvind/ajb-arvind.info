@@ -108,10 +108,15 @@
   --animate-dot: dot 2.5s linear infinite;
   --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
-  --breakpoint-lg: 1024px;
+  --spacing-title: calc(var(--gw) * 2.5);
+
+  --breakpoint-3xl: 1792px;
+  --breakpoint-4xl: 2048px;
+  --breakpoint-5xl: 2304px;
 }
 
 :root {
+  --gw: 4.16666667vw;
   --background: #f3f3f3;
   --foreground: #222222;
   --highlight: #ffef8d;
@@ -153,5 +158,11 @@
 
   summary {
     display: block;
+  }
+}
+
+@layer components {
+  .app-padding {
+    @apply px-4 md:px-title;
   }
 }
